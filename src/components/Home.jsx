@@ -33,7 +33,7 @@ const Home = () => {
         );
         setMembersData(apiData.data);
       } catch (error) {
-        console.error("failed to fetch data", error);
+        alert("failed to fetch data", error);
       }
     };
     fetchData();
