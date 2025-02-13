@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 
-const Pagination = () => {
-  const [activePage, setActivePage] = useState(1);
+const Pagination = ({ handlePageChange, activePage }) => {
   return (
     <div className="pagination-container">
-      <button>Previous</button>
-      <div className="page-no">{activePage}</div>
-      <button>Next</button>
+      <button onClick={() => handlePageChange("Prev")}>Previous</button>
+      <div className="page-no">{activePage + 1}</div>
+      <button onClick={() => handlePageChange("Next")}>Next</button>
     </div>
   );
 };

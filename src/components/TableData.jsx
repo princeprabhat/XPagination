@@ -1,6 +1,6 @@
 import React from "react";
 
-const TableData = ({ header, data }) => {
+const TableData = ({ header, data, start, end }) => {
   return (
     <table>
       <thead>
@@ -13,7 +13,7 @@ const TableData = ({ header, data }) => {
       </thead>
       <tbody>
         {data &&
-          data.map((el) => {
+          data.slice(start, end).map((el) => {
             return (
               <tr key={el.id}>
                 <td>{el.id}</td>
