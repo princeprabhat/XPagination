@@ -1,0 +1,52 @@
+.container {
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+}
+table {
+  width: 95%;
+  margin: auto;
+  border-collapse: collapse;
+  text-align: left;
+  border-bottom: 2px solid #009879;
+  font-size: 1rem;
+}
+/* thead {
+  text-align: left;
+  background-color: #009879;
+  border: 2px solid black;
+} */
+th {
+  background-color: #009879;
+  color: white;
+  text-align: left;
+  padding: 10px;
+}
+tbody td {
+  padding: 10px;
+  background-color: #f3f3f3;
+  color: black;
+}
+tbody tr {
+  border: 1px solid #e3e3e3;
+}
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  gap: 16px;
+}
+.pagination-container > button,
+.page-no {
+  background-color: #009879;
+  color: white;
+  font-size: 15px;
+  padding: 6px 12px;
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  cursor: pointer;
+}
